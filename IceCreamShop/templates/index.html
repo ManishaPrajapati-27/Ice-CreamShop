@@ -1,0 +1,710 @@
+{% extends 'base.html'%}
+{% block title %}Ice Cream Home{% endblock title %}
+
+{% block body %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="text-start col-lg-5 col-md-6 col-sm-12">
+                <div data-aos="fade-right">
+                    <h2 class="mb-4 heading">Welcome To Our <span class="heading-s">Ice Cream Shop</span></h2>
+                    <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque maxime iste in
+                        perspiciatis ad illum
+                        placeat illo. Harum, doloribus placeat.</p>
+                    <button class="buttons">Try It Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Best Seller -->
+<section class="section best-sell">
+    <div class="container">
+        <div data-aos="fade-up">
+            <h2 class="text-center heading mb-2">
+                Best <span class="heading-s">Seller</span>
+            </h2>
+            <p class="sub-para text-center mb-2">Our Hot Deals</p>
+            <div class="line m-auto mb-5"></div>
+        </div>
+        <ul data-aos="fade-right" class="nav nav-pills m-auto mb-4" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Best Sell</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">New Arive</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">New Flaour</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div data-aos="zoom-in" data-aos-delay="500" class="card text-center">
+                            <div class="owl-carousel owl-theme card-carousel">
+                                <div class="item">
+                                    <div class="card-img mb-3">
+                                        {% load static %} <img src="{% static 'images/best-sell/6.png' %}" alt="">
+                                        <div class="icons">
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-custom-class="custom-tooltip" data-bs-title="Like"><i
+                                                    class="far fa-heart"></i></a>
+                                            <a href="#"><i class="far fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-img mb-3">
+                                        {% load static %} <img src="{% static 'images/best-sell/9.jpg' %}" alt="">
+                                        <div class="icons">
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-custom-class="custom-tooltip" data-bs-title="Like"><i
+                                                    class="far fa-heart"></i></a>
+                                            <a href="#"><i class="far fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-img mb-3">
+                                        {% load static %} <img src="{% static 'images/best-sell/4.png' %}" alt="">
+                                        <div class="icons">
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-custom-class="custom-tooltip" data-bs-title="Like"><i
+                                                    class="far fa-heart"></i></a>
+                                            <a href="#"><i class="far fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-img mb-3">
+                                        {% load static %} <img src="{% static 'images/best-sell/1.png' %}" alt="">
+                                        <div class="icons">
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-custom-class="custom-tooltip" data-bs-title="Like"><i
+                                                    class="far fa-heart"></i></a>
+                                            <a href="#"><i class="far fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a href="#">Ice Cream Range</a>
+                                <p><strike><i class="far fa-rupee-sign"></i> 650</strike> &nbsp;<span class="fw-bold">
+                                        <i class="far fa-rupee-sign"></i> 520</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div data-aos="zoom-in" data-aos-delay="600" class="card text-center">
+                            <div class="card-img mb-3">
+                                {% load static %} <img src="{% static 'images/best-sell/2.png' %}" alt="">
+                                <div class="icons">
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <a href="#"><i class="far fa-search"></i></a>
+                                    <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a href="#">Ice Cream Cup</a>
+                                <p><strike><i class="far fa-rupee-sign"></i> 450</strike> &nbsp;<span class="fw-bold">
+                                        <i class="far fa-rupee-sign"></i> 350</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div data-aos="zoom-in" data-aos-delay="700" class="card text-center">
+                            <div class="card-img mb-3">
+                                {% load static %} <img src="{% static 'images/best-sell/9.jpg' %}" alt="">
+                                <div class="icons">
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <a href="#"><i class="far fa-search"></i></a>
+                                    <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a href="#">Chocolate Ice Cream</a>
+                                <p><strike><i class="far fa-rupee-sign"></i> 500</strike> &nbsp;<span class="fw-bold">
+                                        <i class="far fa-rupee-sign"></i> 450</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div data-aos="zoom-in" data-aos-delay="800" class="card text-center">
+                            <div class="card-img mb-3">
+                                {% load static %} <img src="{% static 'images/best-sell/4.png' %}" alt="">
+                                <div class="icons">
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <a href="#"><i class="far fa-search"></i></a>
+                                    <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a href="#">Frozen Yogurt</a>
+                                <p><strike><i class="far fa-rupee-sign"></i> 900</strike> &nbsp;<span class="fw-bold">
+                                        <i class="far fa-rupee-sign"></i> 750</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div data-aos="zoom-in" data-aos-delay="500" class="card text-center">
+                            <div class="card-img mb-3">
+                                {% load static %} <img src="{% static 'images/best-sell/4.png' %}" alt="">
+                                <div class="icons">
+                                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-custom-class="custom-tooltip" data-bs-title="Like"><i
+                                            class="far fa-heart"></i></a>
+                                    <a href="#"><i class="far fa-search"></i></a>
+                                    <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a href="#">Frozen Yogurt</a>
+                                <p><strike><i class="far fa-rupee-sign"></i> 150</strike> &nbsp;<span class="fw-bold">
+                                        <i class="far fa-rupee-sign"></i> 110</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div data-aos="zoom-in" data-aos-delay="600" class="card text-center">
+                            <div class="owl-carousel owl-theme card-carousel">
+                                <div class="item">
+                                    <div class="card-img mb-3">
+                                        {% load static %} <img src="{% static 'images/best-sell/6.png' %}" alt="">
+                                        <div class="icons">
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-custom-class="custom-tooltip" data-bs-title="Like"><i
+                                                    class="far fa-heart"></i></a>
+                                            <a href="#"><i class="far fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-img mb-3">
+                                        {% load static %} <img src="{% static 'images/best-sell/9.jpg' %}" alt="">
+                                        <div class="icons">
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-custom-class="custom-tooltip" data-bs-title="Like"><i
+                                                    class="far fa-heart"></i></a>
+                                            <a href="#"><i class="far fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-img mb-3">
+                                        {% load static %} <img src="{% static 'images/best-sell/4.png' %}" alt="">
+                                        <div class="icons">
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-custom-class="custom-tooltip" data-bs-title="Like"><i
+                                                    class="far fa-heart"></i></a>
+                                            <a href="#"><i class="far fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-img mb-3">
+                                        {% load static %} <img src="{% static 'images/best-sell/1.png' %}" alt="">
+                                        <div class="icons">
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-custom-class="custom-tooltip" data-bs-title="Like"><i
+                                                    class="far fa-heart"></i></a>
+                                            <a href="#"><i class="far fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a href="#">Ice Cream Range</a>
+                                <p><strike><i class="far fa-rupee-sign"></i> 900</strike> &nbsp;<span class="fw-bold">
+                                        <i class="far fa-rupee-sign"></i> 800</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div data-aos="zoom-in" data-aos-delay="700" class="card text-center">
+                            <div class="card-img mb-3">
+                                {% load static %} <img src="{% static 'images/best-sell/4.png' %}" alt="">
+                                <div class="icons">
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <a href="#"><i class="far fa-search"></i></a>
+                                    <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a href="#">Frozen Yogurt</a>
+                                <p><strike><i class="far fa-rupee-sign"></i> 200</strike> &nbsp;<span class="fw-bold">
+                                        <i class="far fa-rupee-sign"></i> 150</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div data-aos="zoom-in" data-aos-delay="800" class="card text-center">
+                            <div class="card-img mb-3">
+                                {% load static %} <img src="{% static 'images/best-sell/10.jpg' %}" alt="">
+                                <div class="icons">
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <a href="#"><i class="far fa-search"></i></a>
+                                    <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a href="#">Vanilla Ice Cream</a>
+                                <p><strike><i class="far fa-rupee-sign"></i> 400</strike> &nbsp;<span class="fw-bold">
+                                        <i class="far fa-rupee-sign"></i> 300</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div data-aos="zoom-in" data-aos-delay="500" class="card text-center">
+                            <div class="card-img mb-3">
+                                {% load static %} <img src="{% static 'images/best-sell/6.png' %}" alt="">
+                                <div class="icons">
+                                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-custom-class="custom-tooltip" data-bs-title="Like"><i
+                                            class="far fa-heart"></i></a>
+                                    <a href="#"><i class="far fa-search"></i></a>
+                                    <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a href="#">Ice Cream Cup</a>
+                                <p><strike><i class="far fa-rupee-sign"></i> 400</strike> &nbsp;<span class="fw-bold">
+                                        <i class="far fa-rupee-sign"></i> 350</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div data-aos="zoom-in" data-aos-delay="600" class="card text-center">
+                            <div class="card-img mb-3">
+                                {% load static %} <img src="{% static 'images/best-sell/9.jpg' %}" alt="">
+                                <div class="icons">
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <a href="#"><i class="far fa-search"></i></a>
+                                    <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a href="#">Chocolate Ice Cream</a>
+                                <p><strike><i class="far fa-rupee-sign"></i> 700</strike> &nbsp;<span class="fw-bold">
+                                        <i class="far fa-rupee-sign"></i> 550</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div data-aos="zoom-in" data-aos-delay="700" class="card text-center">
+                            <div class="owl-carousel owl-theme card-carousel">
+                                <div class="item">
+                                    <div class="card-img mb-3">
+                                        {% load static %} <img src="{% static 'images/best-sell/6.png' %}" alt="">
+                                        <div class="icons">
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-custom-class="custom-tooltip" data-bs-title="Like"><i
+                                                    class="far fa-heart"></i></a>
+                                            <a href="#"><i class="far fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-img mb-3">
+                                        {% load static %} <img src="{% static 'images/best-sell/9.jpg' %}" alt="">
+                                        <div class="icons">
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-custom-class="custom-tooltip" data-bs-title="Like"><i
+                                                    class="far fa-heart"></i></a>
+                                            <a href="#"><i class="far fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-img mb-3">
+                                        {% load static %} <img src="{% static 'images/best-sell/4.png' %}" alt="">
+                                        <div class="icons">
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-custom-class="custom-tooltip" data-bs-title="Like"><i
+                                                    class="far fa-heart"></i></a>
+                                            <a href="#"><i class="far fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-img mb-3">
+                                        {% load static %} <img src="{% static 'images/best-sell/1.png' %}" alt="">
+                                        <div class="icons">
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                data-bs-custom-class="custom-tooltip" data-bs-title="Like"><i
+                                                    class="far fa-heart"></i></a>
+                                            <a href="#"><i class="far fa-search"></i></a>
+                                            <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a href="#">Ice Cream Range</a>
+                                <p><strike><i class="far fa-rupee-sign"></i> 800</strike> &nbsp;<span class="fw-bold">
+                                        <i class="far fa-rupee-sign"></i> 750</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div data-aos="zoom-in" data-aos-delay="800" class="card text-center">
+                            <div class="card-img mb-3">
+                                {% load static %} <img src="{% static 'images/best-sell/10.jpg' %}" alt="">
+                                <div class="icons">
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <a href="#"><i class="far fa-search"></i></a>
+                                    <a href="#"><i class="fal fa-caret-square-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a href="#">Ice Cream Cup</a>
+                                <p><strike><i class="far fa-rupee-sign"></i> 150</strike> &nbsp;<span class="fw-bold">
+                                        <i class="far fa-rupee-sign"></i> 100</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us -->
+<section class="about-us section">
+    <div class="container">
+        <div class="row g-3 align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div data-aos="fade-right">
+                    <h2 class="mb-4 heading">About <span class="heading-s">Us</span></h2>
+                    <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam culpa veniam
+                        quibusdam
+                        vero omnis aut, voluptas magni quo debitis, nisi totam molestiae, est quas! Quos repellat nulla
+                        porro suscipit repellendus eligendi nam eaque voluptatibus. Quasi, velit ipsa. Officiis,
+                        recusandae
+                        fuga!</p>
+                    <a href="/about" class="buttons">Know More</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div data-aos="fade-left" class="img-div">
+                    {% load static %} <img src="{% static 'images/about-img.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ice cream variant -->
+<section class="section variant">
+    <div class="container">
+        <div data-aos="fade-up">
+            <h2 class="text-center heading mb-2">Ice Cream <span class="heading-s">Variant</span></h2>
+            <p class="sub-para text-center mb-2">Our Different Variants</p>
+            <div class="line m-auto mb-5"></div>
+        </div>
+        <div class="row g-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div data-aos="zoom-in" data-aos-delay="800" class="card mb-2">
+                    <div class="icons">
+                        {% load static %} <img src="{% static 'images/variant/icon1.png' %}" alt="">
+                    </div>
+                    <h4>Ice Cream Cup</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae excepturi minus aliquid
+                        eveniet autem vero.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div data-aos="zoom-in" data-aos-delay="900" class="card mb-2">
+                    <div class="icons">
+                        {% load static %} <img src="{% static 'images/variant/icon2.png' %}" alt="">
+                    </div>
+                    <h4>Ice Cone</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae excepturi minus aliquid
+                        eveniet autem vero.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div data-aos="zoom-in" data-aos-delay="1000" class="card mb-2">
+                    <div class="icons">
+                        {% load static %} <img src="{% static 'images/variant/icon3.png' %}" alt="">
+                    </div>
+                    <h4>Custard Base</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae excepturi minus aliquid
+                        eveniet autem vero.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div data-aos="zoom-in" data-aos-delay="1100" class="card mb-2">
+                    <div class="icons">
+                        {% load static %} <img src="{% static 'images/variant/icon4.png' %}" alt="">
+                    </div>
+                    <h4>Mint Chocolate Chip</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae excepturi minus aliquid
+                        eveniet autem vero.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Enjoy Ice Cream -->
+<section class="section enjoy-icecream">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-9 col-sm-12">
+                <div data-aos="fade-right" class="text">
+                    <h2 class="heading mb-4">Let's Enjoy The Cool Ice Cream</h2>
+                    <p>We make the best ice creams with the best taste and care required for
+                        an ice cream to stand up to the time.</p>
+                    <button class="buttons">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Blogs -->
+<section class="section blog">
+    <div class="container-fluid px-0">
+        <div data-aos="fade-up">
+            <h2 class="heading text-center mb-2">
+                Our <span class="heading-s">Blogs</span>
+            </h2>
+            <p class="sub-para text-center mb-2">Our Latest Blogs</p>
+            <div class="line m-auto mb-5"></div>
+        </div>
+        <div class="owl-carousel owl-theme blog-carousel">
+            <div class="item">
+                <div class="img-div">
+                    {% load static %} <img src="{% static 'images/blogs/blog1.jpg' %}" alt="">
+                </div>
+                <div class="text">
+                    <h4>Home Made Ice Cream</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officia quod fugit veniam architecto
+                        libero.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-div">
+                    {% load static %} <img src="{% static 'images/blogs/blog2.jpg' %}" alt="">
+                </div>
+                <div class="text">
+                    <h4>Ice Cream Nation</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officia quod fugit veniam architecto
+                        libero.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-div">
+                    {% load static %} <img src="{% static 'images/blogs/blog3.jpg' %}" alt="">
+                </div>
+                <div class="text">
+                    <h4>Pierre's Ice Cream</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officia quod fugit veniam architecto
+                        libero.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-div">
+                    {% load static %} <img src="{% static 'images/blogs/blog4.jpg' %}" alt="">
+                </div>
+                <div class="text">
+                    <h4>Ice Cream Rolls</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officia quod fugit veniam architecto
+                        libero.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-div">
+                    {% load static %} <img src="{% static 'images/blogs/blog5.jpg' %}" alt="">
+                </div>
+                <div class="text">
+                    <h4>On Second Scoop</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officia quod fugit veniam architecto
+                        libero.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-div">
+                    {% load static %} <img src="{% static 'images/blogs/blog6.jpg' %}" alt="">
+                </div>
+                <div class="text">
+                    <h4>FatBoy Ice Cream</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officia quod fugit veniam architecto
+                        libero.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-div">
+                    {% load static %} <img src="{% static 'images/blogs/blog2.jpg' %}" alt="">
+                </div>
+                <div class="text">
+                    <h4>If the Spoon Fits</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officia quod fugit veniam architecto
+                        libero.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-div">
+                    {% load static %} <img src="{% static 'images/blogs/blog4.jpg' %}" alt="">
+                </div>
+                <div class="text">
+                    <h4>Ice Cream University</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officia quod fugit veniam architecto
+                        libero.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section products">
+    <div class="container">
+        <div data-aos="fade-up">
+            <h2 class="heading text-center mb-2">Our <span class="heading-s">Products</span></h2>
+            <p class="sub-para text-center mb-2">Our Best Products</p>
+            <div class="line m-auto mb-5"></div>
+        </div>
+        <div class="row g-3">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img-div">
+                        {% load static %} <img src="{% static 'images/products/product1.jpg' %}" alt="">
+                    </div>
+                    <div class="text">
+                        <h5 class="fw-bold text-white">Ice Cream cool</h5>
+                        <h6 class="semibold text-white"><i class="far fa-rupee-sign"></i> 250</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img-div">
+                        {% load static %} <img src="{% static 'images/products/product2.jpg' %}" alt="">
+                    </div>
+                    <div class="text">
+                        <h5 class="fw-bold text-white">Gelato Ice Cream</h5>
+                        <h6 class="semibold text-white"><i class="far fa-rupee-sign"></i> 100</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img-div">
+                        {% load static %} <img src="{% static 'images/products/product3.jpg' %}" alt="">
+                    </div>
+                    <div class="text">
+                        <h5 class="fw-bold text-white">Straw Berry Cream</h5>
+                        <h6 class="semibold text-white"><i class="far fa-rupee-sign"></i> 450</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img-div">
+                        {% load static %} <img src="{% static 'images/products/product4.jpg' %}" alt="">
+                    </div>
+                    <div class="text">
+                        <h5 class="fw-bold text-white">Sorbet Ice Cream</h5>
+                        <h6 class="semibold text-white"><i class="far fa-rupee-sign"></i> 600</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img-div">
+                        {% load static %} <img src="{% static 'images/products/product5.jpg' %}" alt="">
+                    </div>
+                    <div class="text">
+                        <h5 class="fw-bold text-white">Cone Ice Cream</h5>
+                        <h6 class="semibold text-white"><i class="far fa-rupee-sign"></i> 550</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img-div">
+                        {% load static %} <img src="{% static 'images/products/product6.jpg' %}" alt="">
+                    </div>
+                    <div class="text">
+                        <h5 class="fw-bold text-white">Ice Cream Cups</h5>
+                        <h6 class="semibold text-white"><i class="far fa-rupee-sign"></i> 250</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img-div">
+                        {% load static %} <img src="{% static 'images/products/product7.jpg' %}" alt="">
+                    </div>
+                    <div class="text">
+                        <h5 class="fw-bold text-white">Choco Ice Cream</h5>
+                        <h6 class="semibold text-white"><i class="far fa-rupee-sign"></i> 350</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="img-div">
+                        {% load static %} <img src="{% static 'images/products/product8.jpg' %}" alt="">
+                    </div>
+                    <div class="text">
+                        <h5 class="fw-bold text-white">Ice Cream cool</h5>
+                        <h6 class="semibold text-white"><i class="far fa-rupee-sign"></i> 400</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock body %}

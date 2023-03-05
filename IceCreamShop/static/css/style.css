@@ -1,0 +1,566 @@
+@import url(./variable.css);
+
+/* Navbar */
+.main-nav {
+  background: var(--light);
+}
+
+.main-nav .navbar-brand {
+  width: 100px;
+}
+
+.main-nav ul li a {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.main-nav ul li a:hover {
+  color: var(--tertiary);
+}
+
+.main-nav .navbar-toggler {
+  background: var(--primary);
+  border: 0;
+  outline: 0 !important;
+  padding: 8px 10px;
+  border-radius: 4px;
+}
+
+.main-nav .navbar-toggler img {
+  width: 20px;
+  height: 20px;
+}
+
+.main-nav button:focus:not(:focus-visible) {
+  outline: 0 !important;
+}
+
+.main-nav .navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0 !important;
+  box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
+}
+
+/* Hero */
+
+.hero {
+  background: url(../images/bg-1.png);
+  background-size: cover;
+  min-height: calc(100vh - 128px);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.hero .heading,
+.hero .heading-s {
+  font-size: 50px;
+}
+
+/* About */
+
+.about-us {
+  background: url(../images/about-bg.png);
+  background-size: cover;
+}
+
+.about-us .img-div {
+  width: 450px;
+  margin-left: auto;
+}
+
+/* Best Seller */
+
+.best-sell .card {
+  border: 0;
+  position: relative;
+}
+
+.best-sell .card .card-carousel .owl-dots {
+  position: absolute;
+  bottom: -8px;
+  left: 32%;
+}
+
+.best-sell .card .card-carousel .owl-dots .owl-dot span {
+  background: var(--light-alt) !important;
+}
+
+.best-sell .card .card-carousel .owl-dots .owl-dot.active span {
+  background: var(--primary) !important;
+}
+
+.best-sell .card .icons a {
+  display: inline-block;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 40px;
+  margin: 3px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 1px rgba(27, 26, 26, 0.218);
+  transition: 0.5s all ease;
+}
+
+.best-sell .card .icons a:hover {
+  background: var(--primary);
+  color: var(--light);
+}
+
+.best-sell .card .card-img {
+  width: 150px;
+  margin: auto;
+  height: 260px;
+  position: relative;
+  z-index: 4;
+}
+
+.best-sell .card .icons {
+  position: absolute;
+  bottom: -75px;
+  transition: 0.5s all ease;
+}
+
+.best-sell .card:hover .icons {
+  bottom: 0;
+}
+
+.best-sell .card .text {
+  position: relative;
+  background-color: var(--light);
+  z-index: 4;
+}
+
+.best-sell .card .text a {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--primary);
+}
+
+.best-sell .card .text p {
+  color: var(--tertiary);
+}
+
+.best-sell .nav-pills .nav-link {
+  background: var(--light);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 0;
+  margin-right: 15px;
+}
+
+.best-sell .nav-pills .nav-link.active {
+  background: var(--primary);
+  color: var(--light);
+  border: 2px solid var(--primary);
+}
+
+.best-sell .nav-pills .nav-link:hover {
+  background: var(--primary);
+  color: var(--light);
+  border: 2px solid var(--primary);
+}
+
+/* Variants */
+
+.variant .card {
+  /* background: rgb(242, 207, 197); */
+  background: linear-gradient(50deg, #ffa9a9, #d8f1f6);
+  border: 0;
+  padding: 15px;
+}
+
+.variant .card .icons {
+  background: var(--light);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.variant .card .icons img {
+  height: 45px;
+  width: 45px;
+}
+
+.variant .card h4 {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 15px 0;
+  padding-bottom: 6px;
+  font-family: var(--sans-serif);
+}
+
+/* Enjoy-Icecream */
+
+.enjoy-icecream {
+  position: relative;
+  background: url(../images/enjoy-bg.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.enjoy-icecream::after {
+  content: " ";
+  background: rgba(255, 169, 169, 0.614);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.enjoy-icecream .text {
+  position: relative;
+  z-index: 3;
+}
+
+.enjoy-icecream h2 {
+  font-family: var(--cursive);
+  font-weight: bold;
+}
+
+.enjoy-icecream .buttons {
+  background: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.enjoy-icecream .buttons:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+/* Blogs */
+
+.blog {
+  position: relative;
+}
+
+.blog .blog-carousel .item {
+  position: relative;
+}
+
+.blog .blog-carousel .item {
+  position: relative;
+  z-index: 0;
+  transition: 0.5s all ease;
+}
+
+.blog .blog-carousel .item .text {
+  background: #ffa9a9c4;
+  padding: 20px;
+  position: absolute;
+  bottom: -250px;
+  z-index: 5;
+  transition: 0.5s all ease;
+}
+
+.blog .blog-carousel .item .text h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--light);
+  letter-spacing: 1px;
+  font-family: var(--sans-serif);
+}
+
+.blog .blog-carousel .item .text a {
+  font-weight: bold;
+  background: var(--secondary);
+  padding: 8px 18px;
+  color: var(--primary);
+  transition: 0.4s all ease;
+}
+
+.blog .blog-carousel .item .text a:hover {
+  color: rgb(8, 77, 77);
+}
+
+.blog .blog-carousel .item:hover:after {
+  content: " ";
+  background: rgba(21, 15, 15, 0.481);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  transition: 0.5s all ease;
+}
+
+.blog .blog-carousel .item:hover .text {
+  bottom: 0;
+}
+
+/* Products */
+.products {
+  background: var(--light);
+}
+
+.products .card {
+  position: relative;
+  border: 0;
+  height: 180px;
+  z-index: 2;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+
+.products .card .img-div img {
+  height: 180px;
+}
+
+.products .card:hover .img-div {
+  transform: scale(1.1);
+  transition: 1s all ease;
+}
+
+.products .card:hover .img-div::after {
+  content: " ";
+  background: #1f1919a9;
+  transition: 0.5s all ease;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.products .card .text {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  z-index: 6;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+
+.products .card:hover .text {
+  opacity: 1;
+  transition: 0.5s all ease;
+}
+
+/* Footer */
+
+footer {
+  background: url(../images/footer-bg1.png);
+  background: cover;
+  background-position: center;
+  padding: 40px 0 !important;
+}
+
+footer .logo-col {
+  width: 150px;
+}
+
+footer .icons a {
+  font-size: 22px;
+  color: var(--primary);
+  margin: 10px;
+}
+
+footer p a {
+  color: var(--dark);
+}
+
+footer h4 {
+  color: var(--dark);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer .c-info p a i {
+  color: var(--primary);
+}
+
+/* About Us Page */
+
+.about-h {
+  background: url(../images/about-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.about-h h2 {
+  font-size: 50px;
+  color: var(--primary);
+  font-weight: 700;
+  font-family: var(--cursive);
+}
+
+/* .about-h {
+  background: url(../images/about-h.png);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+} */
+
+.taste {
+  position: relative;
+  background: url(../images/about-card-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.taste::after {
+  content: " ";
+  background: #82ddef69;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.taste .card {
+  position: relative;
+  z-index: 5;
+  background: var(--light);
+  border: 0;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.taste .card h3 {
+  font-weight: 25px;
+  columns: var(--dark);
+  font-weight: bold;
+}
+
+.taste .card h3 span {
+  color: var(--primary);
+}
+
+/* .taste .card ul {
+  padding-left: 0;
+} */
+
+.taste .card ul li::before {
+  content: "\2023";
+  color: var(--primary);
+  font-weight: bold;
+  display: inline-block;
+  width: 2em;
+  margin-left: -2em;
+}
+
+/* .mapouter {
+  position: relative;
+  text-align: right;
+  height: 510px;
+  width: 770px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 510px;
+  width: 770px;
+} */
+
+.map {
+  height: 100%;
+}
+
+.map iframe {
+  height: 68%;
+}
+
+/* Contact Us Page */
+
+.contact-h {
+  background: url(../images/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.contact-h h2 {
+  font-size: 50px;
+  color: var(--primary);
+  font-weight: 700;
+  font-family: var(--cursive);
+}
+
+.form-page {
+  background: #fff8f8;
+  padding: 25px 35px;
+}
+
+.contact-infos {
+  background: rgb(255, 239, 242);
+}
+
+.contact-infos .icon {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--light);
+  border-radius: 50%;
+  font-size: 25px;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.contact-infos h4 a {
+  display: inline-block;
+  font-size: 20px;
+  color: var(--dark);
+  font-family: 800;
+}
+
+.contact-infos h6 {
+  color: var(--primary);
+}
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+  .main-nav .navbar-collapse ul {
+    text-align: center;
+  }
+
+  .about-us .buttons {
+    margin-bottom: 20px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .map iframe {
+    height: 100%;
+  }
+
+  .about-us .img-div {
+    width: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .section {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .best-sell .nav-pills .nav-link {
+    padding: 8px 12px;
+  }
+}

@@ -1,0 +1,156 @@
+{% extends 'base.html'%}
+{% block title %}Ice Cream Contact{% endblock title %}
+
+{% block body %}
+
+<!-- Contact Heading -->
+<section class="section contact-h">
+    <h2 data-aos="fade-up" class="text-center">Contact</h2>
+</section>
+
+<section class="section contact-info">
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div data-aos="fade-right">
+                    <h2 class="heading mb-4">
+                        Get In <span class="heading-s"> Touch</span>
+                    </h2>
+                    <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex consequuntur obcaecati
+                        culpa quisquam
+                        sint. Ad sint facere enim ducimus eveniet.</p>
+                    <!-- <div class="mapouter"> -->
+                    <div class="map w-100">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7547.485366775998!2d72.8310646724525!3d18.942780446483717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce27b8aa3bdf%3A0x21434b0703218d1b!2sChhatrapati%20Shivaji%20Maharaj%20Terminus!5e0!3m2!1sen!2sin!4v1677439105594!5m2!1sen!2sin"
+                            class="w-100" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div data-aos="fade-left" class="form-page shadow">
+                    <h2 class="heading mb-4">
+                        Contact Us
+                    </h2>
+                    <form method="post" action="/contact">
+                        {% csrf_token %}
+                        <div class="mb-4">
+                            <input class="form-control" name="name" type="text" placeholder="Enter Your Name">
+                        </div>
+                        <div class="mb-4">
+                            <input class="form-control" name="email" type="email" placeholder="Enter Your Email">
+                        </div>
+                        <div class="mb-4">
+                            <input class="form-control" name="phone" type="phone" placeholder="Enter Your Phone Number">
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control" name="desc" placeholder="Leave a comment here"
+                                id="floatingTextarea2"></textarea>
+                        </div>
+                        <button type="submit" class="buttons">Send Message</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section contact-infos">
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col-3">
+                        <h4><a class="icon" href="#"><i class="far fa-phone-alt"></i></a></h4>
+                    </div>
+                    <div class="col-9">
+                        <h6>Our Number</h6>
+                        <h4><a href="#">+91 8975643589</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col-3">
+                        <a class="icon ms-lg-2" href="#"><i class="far fa-envelope"></i></a>
+                    </div>
+                    <div class="col-9">
+                        <h6>Our Email</h6>
+                        <h4><a href="#">icecream27@gmail.com</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-8 col-sm-12">
+                <div class="row">
+                    <div class="col-2">
+                        <a class="icon" href="#"><i class="fas fa-home-lg-alt"></i></a>
+                    </div>
+                    <div class="col-10">
+                        <h6>Our Address</h6>
+                        <h4><a href="#">Chhatrapati Shivaji Terminus Area, Fort, Mumbai, Maharashtra 400001.</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 1) Give Method in form (post or get) then give action url -->
+<!-- 2) Add csrf {% csrf_token %} token below form -->
+<!-- 3) Make models -->
+<!-- 4) Make models in models.py Examples -->
+<!-- class   Contact(models.Model):
+    name = models.charFeild(max_length=125)
+    email = models.charFeild(max_length=125)
+    phone = models.charFeild(max_length=125)
+    desc = models.TextFeild()
+    date = models.DateFeild() -->
+
+<!-- Then Register your model in admin.py like this
+from shop.models import Contact
+# Register your models here.
+
+admin.site.register(Contact)
+-->
+<!-- Copy the app name -->
+<!-- Then paste it on setting.py in Installed_apps -->
+<!-- For example  like this 
+'shop.apps.ShopConfig', (appname.apps.appnameConfig)
+-->
+<!-- Then in terminal python manage.py makemigrations -->
+<!-- Then it show changes in model -->
+
+<!-- Makemigrations(create changes and store file) means Django I am making changes please create the generate the files that store this changes. -->
+<!-- Then run command python manage.py migrate (Its create the table in database or apply the pending changes created by make migrations) -->
+<!-- Request in view.py for submitting form in webpage. -->
+<!-- like this
+if request.method == "POST":
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        desc = request.POST.get('desc')
+-->
+<!-- Import app -->
+<!--like this 
+    from datetime import datetime
+from shop.models import Contact -->
+<!-- save the
+contact = Contact(name=name, email=email, phone=phone, desc=desc, date=datetime.today())
+        contact.save()
+     -->
+
+<!-- For see the name in admin page direct add this self code in models.py
+       def __str__(self):
+        return self.name
+     -->
+
+<!-- Import message framework in setting.py -->
+<!--Then Import message framework in view.py -->
+
+<!-- Add message framework code after saving code 
+messages.success(request, 'Profile details updated.')
+ -->
+
+{% endblock body %}

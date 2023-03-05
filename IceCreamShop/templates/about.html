@@ -1,0 +1,66 @@
+{% extends 'base.html'%}
+{% block title %}Ice Cream About{% endblock title %}
+
+{% block body %}
+
+<!-- About Heading -->
+<section class="section about-h">
+    <h2 data-aos="fade-up" class="text-center">About</h2>
+</section>
+
+<!-- About Us -->
+<section class="about-us section">
+    <div class="container">
+        <div class="row g-3 align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div data-aos="fade-right">
+                    <h2 class="mb-4 heading">About <span class="heading-s">Us</span></h2>
+                    <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam culpa veniam
+                        quibusdam
+                        vero omnis aut, voluptas magni quo debitis, nisi totam molestiae, est quas! Quos repellat nulla
+                        porro suscipit repellendus eligendi nam eaque voluptatibus. Quasi, velit ipsa. Officiis,
+                        recusandae
+                        fuga!</p>
+                    <button class="buttons">Know More</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div data-aos="fade-left" class="img-div">
+                    {% load static %} <img src="{% static 'images/about-img.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section taste">
+    <div class="container">
+        <!-- <div class="col-lg-6 col-md-6 col-sm-12"> -->
+        <div data-aos="flip-up" class="card shadow">
+            <h3>Test Our Ice Cream And <span> Experienced It</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error eos aperiam voluptates neque
+                aliquam?</p>
+            <div class="row">
+                <div class="col-6">
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+</section>
+
+{% endblock body %}

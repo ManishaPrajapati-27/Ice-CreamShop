@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- CSS links -->
+    {% load static %}
+    {% comment %} Favicon {% endcomment %}
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %}">
+    {% comment %} Owl carousel {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.green.min.css' %}">
+    {% comment %} Bootstrap {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css.map' %}">
+    {% comment %} Custom CSS {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+    <!-- Bootstrap CSS -->
+    {% comment %}
+    <link href="" rel="stylesheet"> {% endcomment %}
+
+    <title> {% block title %} {% endblock title %} Ice Cream Shop</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary main-nav">
+        <div class="container">
+            <a class="navbar-brand" href="/">{% load static %}
+                <img src="{% static 'images/logo3.png' %}" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span>{% load static %}
+                    <img src="{% static 'images/toggle.png' %}" alt="logo"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/blog">Blogs</a>
+                    </li>
+                    <a href="/contact" class="buttons d-inline-block ms-lg-3" type="submit">Contact Us</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-warning {{ message.tags }} alert-dismissible fade show my-0" role="alert">
+        <strong>{{ message }}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    {% block body %}{% endblock body %}
+
+    <!-- Footer -->
+    <footer class="section">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="">
+                        <div class="logo-col mb-3">
+                            {% load static %} <img src="{% static 'images/logo3.png' %}" alt="">
+                        </div>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, animi! Vitae
+                            fugit inventore sed
+                            veritatis.</p>
+                        <div class="icons mb-3">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <h4>Quick links</h4>
+                    <div class="line mb-4"></div>
+                    <p><a href="#">Home</a></p>
+                    <p><a href="./about">About</a></p>
+                    <p><a href="#">Blogs</a></p>
+                    <p><a href="#">Products</a></p>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-12">
+                    <div class="c-info">
+                        <h4>Contact Info</h4>
+                        <div class="line mb-4"></div>
+                        <p><a href="#"><i class="far fa-envelope"></i>&nbsp; icecream27@gmail.com</a></p>
+                        <p><a href="#"><i class="fas fa-phone-alt"></i>&nbsp; +91 9987456456</a></p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="mb-0">Copyright © 2023 | Ice Cream Shop</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    {% comment %} Jquery {% endcomment %}
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    {% load static %}
+    {% comment %} Owl Carousel {% endcomment %}
+    <script src="{% static 'js/owl.carousel.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    {% comment %} Bootstrap {% endcomment %}
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    {% comment %} <script src="{% static 'js/bootstrap.bundle.min.js.map' %}"></script> {% endcomment %}
+
+    {% comment %} JS File {% endcomment %}
+    <script src="{% static 'js/app.js' %}"></script>
+
+</body>
+
+</html>
